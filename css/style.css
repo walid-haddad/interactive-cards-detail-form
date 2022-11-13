@@ -169,7 +169,7 @@ button {
     font-size: 14px;
     color: red;
 }
-@media(max-width: 1028px) {
+@media(max-width: 900px) {
     body {
         flex-direction: column;
     }
@@ -197,4 +197,18 @@ button {
         margin: 0px 0px 20px 0px;
     }
     
+}
+
+@media(max-width: 600px) {
+
+    .credit-card-back {
+        top: 10px;
+        left: 100px;
+
+    }
+    .credit-card-front {
+        top: 120px;
+        left: 100px;
+        z-index: 1;
+    }
 }
