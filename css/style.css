@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex; 
+    height: 100vh;
+    margin:0;
+}
+
+.left-container {
+    position:relative;
+    height: 100%;
+    width: 40vw;
+    background-image: linear-gradient(120deg, rgba(150, 8, 194, 0.932), rgb(44, 9, 138), rgb(121, 26, 165));
+    background-size: cover;
+}
+.right-container {
+    
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+input:invalid{
+    border: 1px solid red;
+}
+.credit-card-front {
+    position: absolute;
+    right: -40px;
+    top: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: linear-gradient(120deg, rgba(150, 8, 194, 0.932), rgb(105, 91, 143), rgba(121, 26, 165));
+    width: 250px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.big-circle {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    border-radius: 20px;
+    background-color: #fff;
+
+}
+.small-circle {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    width: 10px;
+    height:10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+
+}
+.credit-card-front span {
+    position: inherit;
+    top: 60px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+.credit-card-front .credit-info {
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    font-size: 12px;
+    color:  #fff;
+}
+
+.credit-card-back {
+    position: absolute;
+    background-color: rgb(235, 225, 225);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    top: 70vh;
+    right: -80px;
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+
+}
+.black-bar {
+    position: inherit;
+    top: 20px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(61, 60, 60);
+}
+
+.gray-bar
+{
+    position: inherit;
+    top: 70px;
+    left: 30px;
+    height: 30px;
+    width: 80%;
+    background-color: rgba(139, 137, 137, 0.767);
+    border-radius: 5px;
+}
+.code {
+    position:inherit;
+    top: 75px;
+    left: 200px;
+    color: #fff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form span {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+form input {
+    width: 380px;
+    margin: 10px 0px;
+    border: 1px solid rgb(116, 113, 113);
+    padding: 10px;  
+    border-radius: 5px;
+}
+.input-group {
+    display: flex;
+}
+.span-group {
+    display:flex;
+    
+}
+.cvc {
+    margin-left: 25px;
+}
+form .input-group .date {
+    margin-right: 35px;
+}
+form .input-group .date input {
+    width: 60px;
+    margin: 10px 10px 0 0;
+}
+.input-group input {
+    width: 200px;
+}
+input::placeholder {
+    font-weight: 500;
+}
+
+button {
+    width: 380px;
+    height: 50px;
+    background-color: #220930;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+}
+.input__error {
+    margin-top: 4px;
+    font-size: 14px;
+    color: red;
+}
+@media(max-width: 1028px) {
+    body {
+        flex-direction: column;
+    }
+    .left-container {
+        width: 100vw;
+        height: 30vh;
+    }
+    .right-container {
+        height: 70vh;
+    }
+    .credit-card-back {
+        top: 10px;
+        left: 50vw;
+    }
+    .credit-card-front {
+        top:120px;
+        left: 48vw;
+        z-index: 1;
+    }
+    form {
+        margin-top: 20vh;
+        margin-left: 26vw;
+    }
+    button {
+        margin: 0px 0px 20px 0px;
+    }
+    
+}
